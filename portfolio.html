@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>John Asada — Portfolio</title>
+  <style>
+    :root {
+      --bg: #F2E9D8;
+      --ink: #33202F;
+      --ink-soft: #5A4756;
+      --sage: #7A9471;
+      --ochre: #D9A441;
+      --rose: #C97B84;
+      --card: #FBF6EC;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: Georgia, serif;
+      line-height: 1.6;
+    }
+
+    .wrap {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 32px;
+      flex-wrap: wrap;
+    }
+
+    h1 {
+      font-family: Arial, sans-serif;
+      font-size: 36px;
+      margin: 0 0 8px;
+    }
+
+    .intro {
+      margin: 0;
+      color: var(--ink-soft);
+      font-size: 18px;
+      max-width: 680px;
+    }
+
+    .back-link {
+      text-decoration: none;
+      color: var(--ink);
+      background: var(--card);
+      border: 1.5px solid var(--ink);
+      padding: 10px 16px;
+      border-radius: 999px;
+      font-weight: 600;
+    }
+
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 24px;
+    }
+
+    .project-card {
+      background: var(--card);
+      border: 1.5px solid var(--ink);
+      border-radius: 18px;
+      overflow: hidden;
+    }
+
+    .image-slot {
+      min-height: 220px;
+      background: linear-gradient(135deg, rgba(122,148,113,0.18), rgba(217,164,65,0.14));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .image-slot img {
+      width: 100%;
+      height: 100%;
+      max-height: 220px;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+
+    .project-content {
+      padding: 20px 22px 24px;
+    }
+
+    .project-title {
+      font-family: Arial, sans-serif;
+      margin: 0 0 8px;
+      font-size: 20px;
+    }
+
+    .project-description {
+      margin: 0 0 12px;
+      color: var(--ink-soft);
+      font-size: 15px;
+    }
+
+    .project-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .project-links a {
+      text-decoration: none;
+      color: var(--ink);
+      background: var(--bg);
+      border: 1.5px solid var(--ink);
+      padding: 8px 12px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    @media (max-width: 760px) {
+      .portfolio-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <div>
+        <h1>My Portfolio</h1>
+        <p class="intro">This page is ready for your project samples. Replace the placeholders with your final images and links.</p>
+      </div>
+      <a class="back-link" href="john-asada-about-me.html">← Back to About Me</a>
+    </div>
+
+    <div class="portfolio-grid">
+      <article class="project-card">
+        <div class="image-slot"><img src="images/cultural.png" alt="Cultural activity design"></div>
+        <div class="project-content">
+          <h2 class="project-title">Cultural Activity Campaign</h2>
+          <p class="project-description">Promotional flyers and social countdown graphics for an event.</p>
+          <div class="project-links">
+            <a href="https://canva.link/xk02v6pr87y6sdg">Project Link</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="image-slot"><img src="images/fsy.png" alt="FSY event design"></div>
+        <div class="project-content">
+          <h2 class="project-title">FSY Orientation Graphics</h2>
+          <p class="project-description">Social media posts and orientation visuals for student engagement.</p>
+          <div class="project-links">
+            <a href="#">Project Link</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</body>
+</html>
