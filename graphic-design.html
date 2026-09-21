@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>John Asada — Graphic Design</title>
+
+<!--
+  ============================================================
+  HOW TO USE THIS FILE
+  ============================================================
+  1. Upload this file to the SAME GitHub repo as your index.html
+     and photography.html, and name it "graphic-design.html".
+  2. On your About page (index.html) and Photography page, you may
+     want to add a link to this page too, the same way "See my work"
+     links to photography.html.
+  3. Search for [BRACKETS] below — there's a reflection paragraph
+     that's drafted for you but worth personalizing in your own words
+     before it goes on your discussion board post.
+  ============================================================
+-->
+
+<style>
+  :root {
+    --bg: #F2E9D8;
+    --ink: #33202F;
+    --ink-soft: #5A4756;
+    --sage: #7A9471;
+    --ochre: #D9A441;
+    --card: #FBF6EC;
+    --edit: #B23A48;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Lora', Georgia, serif;
+    line-height: 1.6;
+  }
+  h1, h2, .display { font-family: 'Poppins', 'Helvetica Neue', Arial, sans-serif; }
+
+  .wrap { max-width: 980px; margin: 0 auto; padding: 0 32px; }
+
+  nav { padding: 36px 0 0; }
+  nav a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--ink);
+    text-decoration: none;
+    border-bottom: 1.5px solid var(--ochre);
+    margin-right: 24px;
+  }
+
+  header { padding: 24px 0 44px; }
+  .eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 13px;
+    color: var(--sage);
+    font-weight: 600;
+    margin: 0 0 10px;
+  }
+  h1 { font-size: 48px; margin: 0 0 14px; font-weight: 700; }
+  header p {
+    font-size: 19px;
+    color: var(--ink-soft);
+    max-width: 640px;
+    margin: 0;
+  }
+
+  .piece { padding-bottom: 64px; }
+  .frame {
+    background: var(--card);
+    border: 1.5px solid var(--ink);
+    border-radius: 14px;
+    padding: 28px;
+    max-width: 420px;
+    margin: 0 auto;
+  }
+  .frame svg { width: 100%; display: block; }
+
+  .caption { padding: 22px 6px 4px; }
+  .caption .title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    margin: 0 0 8px;
+  }
+  .caption p { margin: 0 0 10px; font-size: 17px; color: var(--ink-soft); }
+  .meta {
+    font-family: 'Liberation Mono', monospace;
+    font-size: 13.5px;
+    color: var(--sage);
+    margin: 0 0 18px;
+  }
+
+  .reflection {
+    background: var(--card);
+    border-left: 4px solid var(--ochre);
+    padding: 20px 26px;
+    margin-top: 20px;
+  }
+  .reflection .label {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 12.5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--ochre);
+    display: block;
+    margin-bottom: 10px;
+  }
+  .reflection p { font-size: 16.5px; color: var(--ink-soft); margin: 0 0 12px; }
+  .edit { color: var(--edit); font-family: 'Liberation Mono', monospace; font-size: 15px; }
+
+  footer {
+    border-top: 1.5px solid var(--ink);
+    padding: 28px 0 48px;
+    font-size: 14px;
+    color: var(--ink-soft);
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <nav>
+    <a href="index.html">&larr; Back to About</a>
+    <a href="photography.html">Photography</a>
+  </nav>
+
+  <header>
+    <p class="eyebrow">Graphic Design</p>
+    <h1>Marks I've made.</h1>
+    <p>Brand and identity design work — starting from a hand sketch and building it into something finished. This page grows as the collection does.</p>
+  </header>
+
+  <section class="piece">
+    <div class="frame">
+      <svg viewBox="0 0 1000 1000" role="img"
+           aria-label="A dark blue hatched letter J with an orange dot at the tip of its hook, inside a cream circular sticker with a thin blue ring and a white border.">
+        <defs>
+          <pattern id="jb-hatch" width="18" height="18" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+            <rect width="18" height="18" fill="#1B2E8F"/>
+            <line x1="0" y1="0" x2="0" y2="18" stroke="#4A63D6" stroke-width="5"/>
+          </pattern>
+          <filter id="jb-shadow" x="-10%" y="-10%" width="120%" height="125%">
+            <feGaussianBlur stdDeviation="9"/>
+          </filter>
+        </defs>
+        <circle cx="500" cy="512" r="452" fill="#000" opacity="0.22" filter="url(#jb-shadow)"/>
+        <circle cx="500" cy="500" r="458" fill="#FFFFFF"/>
+        <circle cx="500" cy="500" r="430" fill="#FFEFDC"/>
+        <circle cx="500" cy="500" r="396" fill="none" stroke="#1B2E8F" stroke-width="8"/>
+        <g transform="translate(500 500) scale(0.9) translate(-434 -497)">
+          <path d="M580 215 L580 585 C580 715 525 780 430 780 C345 780 300 725 300 670"
+                fill="none" stroke="url(#jb-hatch)" stroke-width="124" stroke-linecap="butt" stroke-linejoin="round"/>
+          <circle cx="580" cy="215" r="62" fill="url(#jb-hatch)"/>
+          <circle cx="300" cy="640" r="74" fill="#F47B20"/>
+        </g>
+      </svg>
+    </div>
+    <div class="caption">
+      <p class="title">J: Personal Brand Sticker</p>
+      <p class="meta">Elements: line, shape, color, texture &middot; Color scheme: complementary (blue + orange)</p>
+      <p>A bold, hand-sketched J — one of eight thumbnail variations I drew exploring size, weight, and angle — turned into a die-cut brand sticker. The hatched navy fill gives it texture and depth, while the single solid orange dot at the hook acts as the one point of emphasis against an otherwise monochrome mark.</p>
+
+      <div class="reflection">
+        <span class="label">Reflection</span>
+        <p><span class="edit">[DRAFT — personalize this in your own words]</span> I chose this sketch out of my eight thumbnails because the hook shape gave me a natural spot to add a focal point without cluttering the letterform. The hatch-line texture inside the J does double duty as a design element (texture) and reinforces depth, while the solid orange dot creates <em>emphasis</em> — it's the first thing the eye lands on, precisely because it's the only unbroken shape in the mark. I used a complementary color scheme (blue and orange sit opposite each other on the color wheel) specifically because that relationship creates the strongest possible contrast without needing a third color — it keeps the sticker feeling bold and confident rather than busy.</p>
+        <p><span class="edit">[DRAFT — personalize this]</span> For balance, the thick, heavy stroke of the J is offset by the small scale of the orange dot — a large shape and a small shape carrying roughly equal visual weight, which is what keeps the mark from feeling lopsided despite being asymmetric. If I revisited this, I'd experiment with pushing the hatch pattern's contrast further, or trying the same mark in an inverted colorway to see whether it holds up as a flexible brand asset, not just a single fixed sticker.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; John Asada &middot; DM180 Communication
+  </footer>
+
+</div>
+</body>
+</html>
